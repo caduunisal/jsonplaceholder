@@ -17,7 +17,7 @@ function App() {
       <h1>Usuários (JSONPlaceholder)</h1>
       <ul>
         {usuarios.map(user => (
-          <li key={user.id}>{user.name} ({user.email})</li>
+          <li key={user.id}>{user.name} ({user.email}) - {user.address.city}</li>
         ))}
       </ul>
     </div>
